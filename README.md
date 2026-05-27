@@ -37,6 +37,8 @@
 
 ---
 ![Architecture](docs/architecture.png)
+
+
 ## ✨ Features
 
 | Category | Capability |
