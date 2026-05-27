@@ -36,7 +36,7 @@
 - [License](#-license)
 
 ---
-
+![Architecture](docs/architecture.png)
 ## ✨ Features
 
 | Category | Capability |
@@ -251,9 +251,8 @@ admin bypasses both gates unconditionally ──► always ACCESSIBLE ✓
 ## 📁 Folder Structure
 
 ```
-docmind/
+pdf_chatbot/
 ├── backend/
-│   └── backend/
 │       ├── main.py                  # FastAPI app factory, lifespan, startup hooks
 │       ├── auth/
 │       │   ├── router.py            # POST /auth/login, GET /auth/me
@@ -279,7 +278,6 @@ docmind/
 │           └── logger.py            # Structured logger
 │
 ├── frontend/
-│   └── frontend/
 │       ├── index.html
 │       ├── vite.config.js
 │       ├── tailwind.config.js
@@ -444,8 +442,8 @@ Upload metadata is set **exclusively by the admin** at upload time. Auto-detecti
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/docmind.git
-cd docmind
+git clone https://github.com/karthikpp03/pdf_chatbot.git
+cd pdf_chatbot
 ```
 
 ### 2. Backend Setup
@@ -467,6 +465,9 @@ pip install fastapi uvicorn sqlalchemy python-jose passlib[bcrypt] python-multip
             slowapi sentence-transformers faiss-cpu paddlepaddle paddleocr \
             transformers torch langchain-text-splitters pymupdf python-docx \
             python-dotenv
+
+            or
+pip install -r requirements.txt
 
 # (GPU users: replace faiss-cpu with faiss-gpu and torch with torch+cu121)
 ```
@@ -496,7 +497,7 @@ On first startup, DocMind will:
 ### 5. Frontend Setup
 
 ```bash
-cd ../frontend/frontend
+cd ../frontend
 
 # Install dependencies
 npm install
