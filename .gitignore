@@ -1,0 +1,46 @@
+# Python
+
+venv/
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+
+.env
+
+# Logs
+
+logs/
+*.log
+
+# Storage / Vector DB
+
+storage/
+uploads/
+*.index
+*.pkl
+
+# Node
+
+frontend/node_modules/
+frontend/dist/
+
+# VSCode
+
+.vscode/
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# Cache
+
+.cache/
+.pytest_cache/
+
+# SQLite
+
+*.db

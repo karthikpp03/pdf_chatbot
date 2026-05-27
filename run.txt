@@ -1,0 +1,2 @@
+npm run dev  #PS E:\rag\frontend> 
+uvicorn backend.main:app --reload  #(venv) PS E:\rag>
